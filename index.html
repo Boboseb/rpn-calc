@@ -14,7 +14,7 @@ if (navigator.mozApps) {
         var request = navigator.mozApps.getSelf();
         request.onsuccess = function() {
             if (!this.result) {
-                request = navigator.mozApps.install(location.protocol + "//" + location.host + "/u/21903223/RPN-Calc/" + "manifest.webapp");
+                request = navigator.mozApps.install(location.protocol + "//" + location.host + "/rpn-calc/" + "manifest.webapp");
                 request.onerror = function() {
                     console.log("Install failed: " + this.error.name);
                 };
