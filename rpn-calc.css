@@ -1,0 +1,93 @@
+html {
+    font-size: 10px;
+    background: #333;
+}
+section[role="region"] > header:first-child {
+    height: 2.5rem;
+}
+section[role="region"], div[role="main"] {
+    /*height: 100%;*/
+    background: #333;
+}
+section[role="region"] > header:first-child h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+h1 span[data-flag] {
+    float: right;
+}
+#display {
+    font-family: monospace;
+    background: #aba;
+    color: #222;
+    margin-bottom: 10px;
+    padding: 0.2em 0.5em;
+}
+#display output {
+    display: block;
+    text-align: right;
+}
+#stack li {
+    line-height: 2.0rem;
+    counter-increment: toto -1;
+}
+#stack li::before {
+    content: counter(toto) ": ";
+    float: left;
+}
+#stack {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: toto 5;
+}
+#input {
+    border: none;
+    background: #aba;
+    font-family: monospace;
+    font-size: 1.9rem;
+    line-height: 2.0rem;
+    color: #222;
+    padding: 0;
+    width: 100%;
+    height: 2rem;
+}
+#buttons {
+    position: relative;
+    width: 100%;
+    height: 36.1rem;
+}
+#buttons table {
+    width: 100%;
+    margin: 0 auto;
+}
+#buttons td {
+    width: 25%;
+}
+#buttons #panel2 td {
+    width: 14.28%;
+}
+#buttons button {
+    width: 100%;
+}
+#buttons button.alt {
+    display: none;
+}
+#buttons.alt button:not(:only-child) {
+    display: none;
+}
+#buttons.alt button.alt {
+    display: inline;
+}
+#buttons td[rowspan] button {
+    height: 94px;
+}
+#buttons button.small {
+    font-size: 1.26rem;
+}
+#buttons.alt button[data-action="alt"] {
+  border-color: #008aaa;
+  background: #008aaa;
+  background-size: auto 100%;
+  color: #333;
+}
