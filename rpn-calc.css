@@ -13,6 +13,9 @@ section[role="region"] > header:first-child h1 {
     font-size: 2rem;
     line-height: 2.5rem;
 }
+[role="tablist"] > [role="tab"] > a {
+    font-size: inherit;
+}
 h1 span[data-flag] {
     float: right;
 }
@@ -83,7 +86,10 @@ h1 span[data-flag] {
     height: 94px;
 }
 #buttons button.small {
-    font-size: 1.26rem;
+    font-size: 1.23rem;
+}
+#buttons button.x-small {
+    font-size: 1.12rem;
 }
 #buttons.alt button[data-action="alt"] {
   border-color: #008aaa;
