@@ -1,0 +1,17 @@
+{
+  "name": "RPN-Calc",
+  "description": "RPN Calculator",
+  "launch_path": "/u/21903223/RPN-Calc/calc.html#panel1",
+  "icons": {
+    "60": "/u/21903223/RPN-Calc/icon-60.png",
+    "128": "/u/21903223/RPN-Calc/icon-128.png"
+  },
+  "developer": {
+    "name": "Sébastien Desvignes",
+    "url": "http://wwww.ophiuchus.org/bob/"
+  },
+  "default_locale": "en",
+  "fullscreen": "true",
+  "orientation": ["portrait"],
+  "appcache_path": "/u/21903223/RPN-Calc/cache.manifest"
+}

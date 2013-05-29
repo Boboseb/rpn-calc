@@ -14,7 +14,16 @@ if (navigator.mozApps) {
         var request = navigator.mozApps.getSelf();
         request.onsuccess = function() {
             if (!this.result) {
-                request = navigator.mozApps.install(location.protocol + "//" + location.host + "/rpn-calc/" + "manifest.webapp");
+                var pathname = location.pathname;
+                var manifestName = "manifest";
+                var r = /[^\/]*$/;
+                if (pathname.endsWith(".html")) {
+                    pathname = pathname.replace(r, '');
+                }
+                if (location.host == "dl.dropboxusercontent.com") {
+                    manifestName += "-dropbox";
+                }
+                request = navigator.mozApps.install(location.protocol + "//" + location.host + pathname + manifestName + ".webapp");
                 request.onerror = function() {
                     console.log("Install failed: " + this.error.name);
                 };
