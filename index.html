@@ -23,6 +23,9 @@ if (navigator.mozApps) {
                 if (location.host == "dl.dropboxusercontent.com") {
                     manifestName += "-dropbox";
                 }
+                else if (location.host == "boboseb.github.io") {
+                    manifestName += "-github";
+                }
                 request = navigator.mozApps.install(location.protocol + "//" + location.host + pathname + manifestName + ".webapp");
                 request.onerror = function() {
                     console.log("Install failed: " + this.error.name);
