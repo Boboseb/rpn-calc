@@ -1,7 +1,7 @@
 {
   "name": "RPN-Calc",
-  "description": "RPN Calculator",
-  "launch_path": "/calc.html#panel1",
+  "description": "A scientific RPN calculator.",
+  "launch_path": "/calc.html",
   "icons": {
     "60": "/icon-60.png",
     "128": "/icon-128.png"
@@ -12,6 +12,5 @@
   },
   "default_locale": "en",
   "fullscreen": "true",
-  "orientation": ["portrait"],
-  "appcache_path": "/cache.manifest"
+  "orientation": ["portrait"]
 }

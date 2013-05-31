@@ -431,5 +431,8 @@ CalcController.prototype.updateView = function () {
 var controller;
 
 document.addEventListener("DOMContentLoaded", function (e) {
+    if (window.location.hash == "") {
+        window.location.hash = "#panel1";
+    }
     controller = new CalcController(document);
 }, false);
