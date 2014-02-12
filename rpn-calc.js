@@ -378,6 +378,19 @@ CalcController.actions = {
             item = Math.log((1 + item) / (1 - item)) / 2;
             this.stack.push(item);
         }
+    },
+    mod: function () {
+        if (CalcController.checkArgsCount(this, 2)) {
+            var right = this.stack.pop();
+            var left = this.stack.pop();
+            this.stack.push(left % right);
+        }
+    },
+    floor: function () {
+        if (CalcController.checkArgsCount(this, 1)) {
+            var item = this.stack.pop();
+            this.stack.push(Math.floor(item));
+        }
     }
 }
 
