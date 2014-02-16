@@ -4,6 +4,7 @@
   "launch_path": "/calc.html",
   "icons": {
     "60": "/icon-60.png",
+    "90": "/icon-90.png",
     "128": "/icon-128.png"
   },
   "developer": {
