@@ -415,7 +415,7 @@ CalcController.prototype.updateView = function () {
     var stack = this.model.stack;
     
     for (var i = 0; i < items.length; ++i) {
-        items[items.length - i - 1].textContent = (stack.length > i) ? stack[stack.length - i - 1].toString() : " ";
+        items[items.length - i - 1].textContent = (stack.length > i) ? stack[stack.length - i - 1].toPrecision(13).replace(/\.?0+$/, "") : " ";
     }
     
     this.inputDisplay.value = this.model.input;
