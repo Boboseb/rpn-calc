@@ -420,7 +420,7 @@ CalcController.prototype.updateView = function () {
     
     this.inputDisplay.value = this.model.input;
     this.inputDisplay.hidden = this.model.input == "";
-    this.stackDisplay.style.marginTop = this.inputDisplay.hidden ? "" : "-20px";
+    this.stackDisplay.style.marginTop = this.inputDisplay.hidden ? "" : "-2rem";
     
     if (this.flags.rad) {
         for (i = 0; i < this.flags.rad.length; ++i) {
