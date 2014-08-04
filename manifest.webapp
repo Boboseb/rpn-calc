@@ -1,7 +1,7 @@
 {
   "name": "RPN-Calc",
   "description": "A scientific RPN calculator.",
-  "version": "1.1",
+  "version": "1.2",
   "launch_path": "/calc.html",
   "icons": {
     "60": "/icon-60.png",
