@@ -1,7 +1,7 @@
 {
   "name": "RPN-Calc",
   "description": "RPN Calculator",
-  "version": "1.2",
+  "version": "1.3",
   "launch_path": "/u/21903223/RPN-Calc/calc.html#panel1",
   "icons": {
     "60": "/u/21903223/RPN-Calc/icon-60.png",
