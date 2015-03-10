@@ -254,6 +254,18 @@ CalcController.actions = {
             this.stack.push(Math.sqrt(item));
         }
     },
+    cube: function () {
+        if (CalcController.checkArgsCount(this, 1)) {
+            var item = this.stack.pop();
+            this.stack.push(item * item * item);
+        }
+    },
+    cbrt: function () {
+        if (CalcController.checkArgsCount(this, 1)) {
+            var item = this.stack.pop();
+            this.stack.push(Math.pow(item, 1.0/3.0));
+        }
+    },
     pow: function () {
         if (CalcController.checkArgsCount(this, 2)) {
             var x = this.stack.pop();
