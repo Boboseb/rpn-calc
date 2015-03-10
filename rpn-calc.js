@@ -186,7 +186,26 @@ CalcController.actions = {
         }
     },
     neg: function () {
-        if (CalcController.checkArgsCount(this, 1)) {
+        if (this.input != "") {
+            var posE = this.input.indexOf('E');
+            if (posE == -1) {
+                if (this.input.startsWith('-')) {
+                    this.input = this.input.substr(1);
+                }
+                else {
+                    this.input = '-' + this.input;
+                }
+            }
+            else {
+                if (this.input.startsWith('-', posE + 1)) {
+                    this.input = this.input.substr(0, posE + 1) + this.input.substr(posE + 2);
+                }
+                else {
+                    this.input = this.input.substr(0, posE + 1) + '-' + this.input.substr(posE + 1);
+                }
+            }
+        }
+        else if (CalcController.checkArgsCount(this, 1)) {
             this.stack.push(-this.stack.pop())
         }
     },
